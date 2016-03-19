@@ -3,3 +3,4 @@
 .asscache
 node_modules/
 bower/
+build/
