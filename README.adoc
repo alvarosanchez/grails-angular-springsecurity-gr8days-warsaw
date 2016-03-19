@@ -1,0 +1,14 @@
+= Grails 3.1 application with Angular JS front-end
+
+This project shows a sample Grails-centric application where the backend is a Grails 3.1 REST API, and the front-end
+is an Angular JS 1.4.x application.
+
+The whole project has been generated using the new Grails 3.1 `angular` profile.
+
+== Backend
+
+In this case, the backend is the same as the one generated in the `grailsBoot` project.
+
+== Front-end
+
+Angular JS files are located in `grails-app/assets/javascript`.

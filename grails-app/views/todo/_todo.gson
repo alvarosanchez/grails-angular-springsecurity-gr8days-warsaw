@@ -1,0 +1,16 @@
+import grailsng.Todo
+
+model {
+	Todo todo
+}
+
+json {
+    id todo.id
+    description todo.description
+    completed todo.completed
+    _links {
+        self {
+            href "${g.link(resource: 'todo', absolute: true)}/${todo.id}"
+        }
+    }
+}

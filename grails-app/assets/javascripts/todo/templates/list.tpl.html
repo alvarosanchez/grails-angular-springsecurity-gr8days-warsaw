@@ -1,0 +1,22 @@
+<div class="form">
+    <input type="text" ng-model="vm.newTodo.description" />
+    <button type="button" ng-click="vm.save()">Save</button>
+</div>
+
+<br/>
+
+<table>
+    <tbody>
+    <tr ng-repeat="t in vm.todos">
+        <td>
+            {{t.description}}
+        </td>
+        <td>
+            <input type="checkbox" ng-model="t.completed" ng-click="vm.update(t)" />
+        </td>
+        <td>
+            <button type="button" ng-click="vm.delete(t)">Delete</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
